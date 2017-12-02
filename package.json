@@ -1,0 +1,22 @@
+{
+  "name": "wdio-allure-multibrowser-test",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Test of wdio-allure-reporter in a multibrowser configuration",
+  "main": "index.js",
+  "scripts": {
+    "test": "node clean.js && wdio & node node_modules/allure-commandline/bin/allure generate && node node_modules/allure-commandline/bin/allure open"
+  },
+  "author": "Trey Turner",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "wdio-allure-reporter": "^0.1.2",
+    "wdio-mocha-framework": "^0.5.11",
+    "wdio-selenium-standalone-service": "0.0.9",
+    "webdriverio": "^4.9.11"
+  },
+  "dependencies": {
+    "allure-commandline": "^2.4.1"
+  }
+}
